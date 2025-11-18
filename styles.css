@@ -195,6 +195,78 @@ strong {
 }
 
 /* ==========================================
+   AFFILIATIONS
+   ========================================== */
+
+.affiliations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.affiliation-card {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+}
+
+.affiliation-card:hover {
+    border-color: #2563eb;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.affiliation-logo {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.affiliation-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.affiliation-info {
+    flex: 1;
+}
+
+.affiliation-info h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.25rem;
+    color: #111827;
+}
+
+.affiliation-info p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    line-height: 1.5;
+    margin-bottom: 0.25rem;
+}
+
+.affiliation-period {
+    font-size: 0.85rem !important;
+    color: #9ca3af !important;
+    font-weight: 500;
+}
+
+/* ==========================================
    RESEARCH INTERESTS
    ========================================== */
 
@@ -430,6 +502,11 @@ footer p {
 
     h3 {
         font-size: 1.25rem;
+    }
+
+    .affiliations-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
     }
 
     .interests-grid {
