@@ -1,82 +1,222 @@
 <!DOCTYPE html>
-
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Poojan Shah - Computer Science undergraduate at IIT Delhi interested in theoretical computer science, quantum computing, and machine learning theory.">
+    <title>Poojan Shah</title>
 
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Define title -->
-    <title>Carl Barks</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
 
-    <!-- Include favicon. Use, e.g., https://favicon.io/ -->
-    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 
-    <!-- Include style sheets -->
-    <link rel="stylesheet" href="main.css" />
+    <!-- MathJax for LaTeX rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <!-- Fixed Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#research" class="nav-link">Research</a>
+            <a href="#publications" class="nav-link">Publications</a>
+            <a href="#cv" class="nav-link">CV</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
 
-    <!-- Fonts from Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet" />
+    <!-- Main Content -->
+    <main class="container">
 
-    <!-- Load FontAwesome (for icons) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-    />
+        <!-- Header Section -->
+        <header id="about" class="section">
+            <div class="header-content">
+                <img src="image.jpg" alt="Poojan Shah" class="profile-image">
+                <div class="header-text">
+                    <h1>Poojan Shah</h1>
+                    <p class="affiliation">
+                        B.Tech, Computer Science and Engineering<br>
+                        <strong>Indian Institute of Technology Delhi</strong>
+                    </p>
+                    <p class="affiliation secondary">
+                        Winter 2025: Exchange Student<br>
+                        University of Waterloo, Faculty of Mathematics
+                    </p>
+                    <p class="email">
+                        <a href="mailto:poojanshah@gmail.com">poojanshah@gmail.com</a>
+                    </p>
+                </div>
+            </div>
 
-    <!-- Load Academicons (for more icons) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css"
-      integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
-      crossorigin="anonymous"
-    />
-  </head>
+            <!-- Bio -->
+            <div class="bio">
+                <p>
+                    I am a 3rd-year undergraduate student at IIT Delhi, with broad interests in theoretical computer science.
+                    My work spans quantum computing, machine learning theory, and algorithmic foundations.
+                </p>
+                <p>
+                    Previously, I interned at the Centre for Quantum Technologies (CQT) with
+                    <a href="https://www.comp.nus.edu.sg/~rahul/" target="_blank" rel="noopener">Prof. Rahul Jain</a>,
+                    where I explored problems at the intersection of quantum information and complexity theory.
+                </p>
+                <p>
+                    I am particularly interested in algorithms, computational complexity, learning theory, and optimization.
+                    I enjoy thinking about fundamental questions that bridge mathematics and computation.
+                </p>
+            </div>
+        </header>
 
-  <body>
-    <section id="content">
-      <!-- Avatar image -->
-      <img src="image.jpg" alt="Carl Barks" class="avatar" />
+        <!-- Research Interests -->
+        <section id="research" class="section">
+            <h2>Research Interests</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <h3>Theoretical Computer Science</h3>
+                    <p>Algorithms, complexity theory, and computational foundations</p>
+                </div>
+                <div class="interest-item">
+                    <h3>Quantum Computing</h3>
+                    <p>Quantum algorithms, information theory, and complexity</p>
+                </div>
+                <div class="interest-item">
+                    <h3>Machine Learning Theory</h3>
+                    <p>Learning theory, optimization, and theoretical foundations of ML</p>
+                </div>
+                <div class="interest-item">
+                    <h3>Optimization & Computer Vision</h3>
+                    <p>Regression on images and optimization methods</p>
+                </div>
+            </div>
+        </section>
 
-      <!-- Text -->
-      <h1>Hi, I'm Carl Barks!</h1>
-      <p>
-        I am a Ph.D. student in empirical barkology at Woof University.
-      </p>
-      <p>
-        Most of my current research is driven by trying to find an answer to the age-old question of “Who is a good boy?"
-      </p>
-      <p>
-        Please feel free to get in touch!
-      </p>
+        <!-- Publications / Projects -->
+        <section id="publications" class="section">
+            <h2>Publications & Projects</h2>
 
-      <!-- Icons -->
-      <ul class="icons">
-        <li>
-          <a href="" title="Institutional website"><i class="fas fa-university"></i></a>
-        </li>
-        <li>
-          <a href="" title="E-Mail"><i class="fas fa-envelope"></i></a>
-        </li>
-        <li>
-          <a href="" title="GitHub"><i class="fab fa-github"></i></a>
-        </li>
-        <li>
-          <a href="" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </li>
-        <li>
-          <a href="" title="NASA / ADS"><i class="ai ai-ads"></i></a>
-        </li>
-        <li>
-          <a href="" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-        </li>
-      </ul>
-    </section>
-  </body>
- 
+            <div class="publication-card">
+                <h3 class="pub-title">Project Title Example</h3>
+                <p class="pub-authors">Author names here</p>
+                <p class="pub-venue">Conference/Journal Name, Year</p>
+                <p class="pub-description">
+                    Brief description of the research problem, methodology, and key results.
+                    This can include mathematical notation using LaTeX: \(O(n \log n)\) complexity.
+                </p>
+                <div class="pub-links">
+                    <a href="#" target="_blank" rel="noopener">Paper</a>
+                    <a href="#" target="_blank" rel="noopener">arXiv</a>
+                    <a href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+            </div>
+
+            <div class="publication-card">
+                <h3 class="pub-title">Another Project or Publication</h3>
+                <p class="pub-authors">Author names here</p>
+                <p class="pub-venue">Venue, Year</p>
+                <p class="pub-description">
+                    Description of research work. Example with math: quantum state \(|\psi\rangle\)
+                    and complexity class \(\mathsf{BQP}\).
+                </p>
+                <div class="pub-links">
+                    <a href="#" target="_blank" rel="noopener">Paper</a>
+                    <a href="#" target="_blank" rel="noopener">Slides</a>
+                </div>
+            </div>
+
+            <!-- Add more publication cards as needed -->
+
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="section">
+            <h2>Curriculum Vitae</h2>
+            <div class="cv-container">
+                <a href="#" class="cv-button" target="_blank" rel="noopener">
+                    <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download CV (PDF)
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:poojanshah@gmail.com">poojanshah@gmail.com</a>
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/poojancshah" target="_blank" rel="noopener" class="social-link">
+                        GitHub
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" class="social-link">
+                        Google Scholar
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" class="social-link">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Poojan Shah. Last updated: January 2025.</p>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = target.offsetTop - navHeight - 20;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add active state to navigation links on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
